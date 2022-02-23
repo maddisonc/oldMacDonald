@@ -60,7 +60,7 @@ public class Farmer
     // 6) Brains
     public String singSong (String cowName, String chick1Sound, String chick2Sound, boolean isGpig)
     {
-        // for colors
+        // for colors (Geeks for Geeks)
         String ANSI_RESET = "\u001B[0m"; //black
         String ANSI_YELLOW = "\u001B[33m"; // yellow
         String ANSI_GREEN = "\u001B[32m"; // green
