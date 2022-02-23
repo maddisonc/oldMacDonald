@@ -11,6 +11,12 @@ public class Animal
         this.sound = sound;
     }
 
+    // overloaded constructor for without sound (chick)
+    public Animal (String type)
+    {
+        this.type = type;
+    }
+
     // 4) Getters
     public String getType ()
     {

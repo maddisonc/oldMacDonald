@@ -58,31 +58,31 @@ public class Farmer
     }
 
     // 6) Brains
-    public String singSong ()
+    public String singSong (String cowName, String chick1Sound, String chick2Sound, boolean isGpig)
     {
         String lyrics = "Old MacDonald had a farm, Ee i ee i oh!"
                 + "\nAnd on that farm he had some chickens,"
                 + "\nEe i ee i oh!"
-                + "\nWith a cluck-cluck here,"
-                + "\nAnd a cluck-cluck there"
-                + "\nHere a cluck, there a cluck,"
-                + "\nEverywhere a cluck-cluck"
+                + "\nWith a " + chick1Sound + "-" + chick1Sound + " here,"
+                + "\nAnd a " + chick2Sound + "-" + chick2Sound + " there,"
+                + "\nHere a " + chick1Sound + ", there a " + chick2Sound + ","
+                + "\nEverywhere a " + chick1Sound + "-" + chick2Sound + ","
                 + "\nOld MacDonald had a farm"
                 + "\nEe i ee i oh!\n"
 
                 + "\nOld MacDonald had a farm,"
                 + "\nEe i ee i oh!"
-                // + "\nAnd on that farm he had a cow named " + cow.name 
+                + "\nAnd on that farm he had a cow named " + cowName + "," // cow that responds to name
                 + "\nEe i ee i oh! With a moo-moo here,"
                 + "\nAnd a moo-moo there"
                 + "\nHere a moo, there a moo,"
                 + "\nEverywhere a moo-ooo"
                 + "\nOld MacDonald had a farm,"
-                + "\nEe i ee i oh!"
+                + "\nEe i ee i oh!\n"
 
                 + "\nOld MacDonald had a farm,"
                 + "\nEe i ee i oh!"
-                + "\nAnd on that farm he had some pigs,"
+                + "\nAnd on that farm he had some pigs " + "(Guinea pig status: " + isGpig + "),"
                 + "\nEe i ee i oh! With an oink-oink here,"
                 + "\nAnd an oink-oink there"
                 + "\nHere an oink, there an oink,"
@@ -95,10 +95,10 @@ public class Farmer
     // 3) toString()
     public String toString()
     {
-        String output = "Farmer name: " + farmerName
-                + "Farmer age: "+ farmerAge
-                + "Favorite crop: " + favCrop
-                + "Tractor color: " + tractorColor;
+        String output = "Name: " + farmerName
+                + "\nAge: "+ farmerAge
+                + "\nFavorite crop: " + favCrop
+                + "\nTractor color: " + tractorColor;
         return output;
     }
 

@@ -5,17 +5,9 @@ public class Chick extends Animal
 
     // 2) Constructor
     // chick is too young
-    public Chick (String type, String sound)
+    public Chick (String type, int age)
     {
-        super (type, sound);
-        this.age = age;
-    }
-
-    // chick is old
-    public Chick (boolean old, String type, String sound)
-    {
-        super (type, sound);
-        this.sound = "cheep";
+        super (type);
         this.age = age;
     }
 
