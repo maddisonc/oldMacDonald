@@ -60,19 +60,25 @@ public class Farmer
     // 6) Brains
     public String singSong (String cowName, String chick1Sound, String chick2Sound, boolean isGpig)
     {
+        // for colors
+        String ANSI_RESET = "\u001B[0m"; //black
+        String ANSI_YELLOW = "\u001B[33m"; // yellow
+        String ANSI_GREEN = "\u001B[32m"; // green
+        String ANSI_CYAN = "\u001B[36m"; // cyan
+
         String lyrics = "Old MacDonald had a farm, Ee i ee i oh!"
-                + "\nAnd on that farm he had some chickens,"
+                + "\nAnd on that farm he had some chicks,"
                 + "\nEe i ee i oh!"
-                + "\nWith a " + chick1Sound + "-" + chick1Sound + " here,"
-                + "\nAnd a " + chick2Sound + "-" + chick2Sound + " there,"
-                + "\nHere a " + chick1Sound + ", there a " + chick2Sound + ","
-                + "\nEverywhere a " + chick1Sound + "-" + chick2Sound + ","
+                + "\nWith a " + ANSI_YELLOW + chick1Sound + ANSI_RESET + "-" + ANSI_YELLOW + chick1Sound + ANSI_RESET + " here,"
+                + "\nAnd a " + ANSI_YELLOW + chick2Sound + ANSI_RESET + "-" + ANSI_YELLOW + chick2Sound + ANSI_RESET + " there,"
+                + "\nHere a " + ANSI_YELLOW + chick1Sound + ANSI_RESET + ", there a " + ANSI_YELLOW + chick2Sound + ANSI_RESET + ","
+                + "\nEverywhere a " + ANSI_YELLOW + chick1Sound + ANSI_RESET + "-" + ANSI_YELLOW + chick2Sound + ANSI_RESET + ","
                 + "\nOld MacDonald had a farm"
                 + "\nEe i ee i oh!\n"
 
                 + "\nOld MacDonald had a farm,"
                 + "\nEe i ee i oh!"
-                + "\nAnd on that farm he had a cow named " + cowName + "," // cow that responds to name
+                + "\nAnd on that farm he had a cow named " + ANSI_GREEN + cowName + ANSI_RESET + "," // cow that responds to name
                 + "\nEe i ee i oh! With a moo-moo here,"
                 + "\nAnd a moo-moo there"
                 + "\nHere a moo, there a moo,"
@@ -82,7 +88,7 @@ public class Farmer
 
                 + "\nOld MacDonald had a farm,"
                 + "\nEe i ee i oh!"
-                + "\nAnd on that farm he had some pigs " + "(Guinea pig status: " + isGpig + "),"
+                + "\nAnd on that farm he had some pigs " + ANSI_CYAN + "(Guinea pig status: " + isGpig + ")" + ANSI_RESET + ","
                 + "\nEe i ee i oh! With an oink-oink here,"
                 + "\nAnd an oink-oink there"
                 + "\nHere an oink, there an oink,"
