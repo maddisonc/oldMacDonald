@@ -72,7 +72,7 @@ public class Farmer
 
                 + "\nOld MacDonald had a farm,"
                 + "\nEe i ee i oh!"
-                + "\nAnd on that farm he had some cows,"
+                // + "\nAnd on that farm he had a cow named " + cow.name 
                 + "\nEe i ee i oh! With a moo-moo here,"
                 + "\nAnd a moo-moo there"
                 + "\nHere a moo, there a moo,"
