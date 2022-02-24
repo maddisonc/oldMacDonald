@@ -57,7 +57,39 @@ public class Farmer
         this.tractorColor = tractorColor;
     }
 
+
+    // verse
+    // verse method
+    public String verse (String type, String sound)
+    {
+        String verse = "Old MacDonald had a farm, Ee i ee i oh!"
+                + "\nAnd on that farm he had a " + type + ","
+                + "\nEe i ee i oh!"
+                + "\nWith a " + sound + "-" + sound + " here,"
+                + "\nAnd a " + sound + "-" + sound + " there,"
+                + "\nHere a " + sound + ", there a " + sound + ","
+                + "\nEverywhere a " + sound + "-" + sound + ","
+                + "\nOld MacDonald had a farm"
+                + "\nEe i ee i oh!\n";
+        return verse;
+    }
+
+    public String verse (String name, String type, String sound)
+    {
+        String verse = "Old MacDonald had a farm, Ee i ee i oh!"
+                + "\nAnd on that farm he had a " + type + " named " + name + ","
+                + "\nEe i ee i oh!"
+                + "\nWith a " + sound + "-" + sound + " here,"
+                + "\nAnd a " + sound + "-" + sound + " there,"
+                + "\nHere a " + sound + ", there a " + sound + ","
+                + "\nEverywhere a " + sound + "-" + sound + ","
+                + "\nOld MacDonald had a farm"
+                + "\nEe i ee i oh!\n";
+        return verse;
+    }
+
     // 6) Brains
+    /*
     public String singSong (String cowName, String chick1Sound, String chick2Sound, boolean isGpig)
     {
         // for colors (Geeks for Geeks)
@@ -97,6 +129,8 @@ public class Farmer
                 + "\nEe i ee i oh!";
         return lyrics;
     }
+
+    */
 
     // 3) toString()
     public String toString()
