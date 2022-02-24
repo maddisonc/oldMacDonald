@@ -22,10 +22,10 @@ class DriverClass
         // Print out song and pass in cow's name, chicks' sounds based on age, and pig status
         //System.out.println(FarmerJohn.singSong(JgeromeCow.getName(), EggsteinChick.ageSound(), EggbertChick.ageSound(), PeppaPig.getIsGPig()));
 
-        System.out.println(FarmerJohn.verse(JgeromeCow.getName(), JgeromeCow.getType(), JgeromeCow.getSound()));
-        System.out.println(FarmerJohn.verse(PeppaPig.getType(), PeppaPig.getSound()));
-        System.out.println(FarmerJohn.verse(EggsteinChick.getType(), EggsteinChick.ageSound()));
-        System.out.println(FarmerJohn.verse(EggbertChick.getType(), EggbertChick.ageSound()));
+        System.out.println(FarmerJohn.verse("green", JgeromeCow.getName(), JgeromeCow.getType(), JgeromeCow.getSound()));
+        System.out.println(FarmerJohn.verse("cyan", PeppaPig.getType(), PeppaPig.getSound()));
+        System.out.println(FarmerJohn.verse("yellow", EggsteinChick.getType(), EggsteinChick.ageSound()));
+        System.out.println(FarmerJohn.verse("yellow", EggbertChick.getType(), EggbertChick.ageSound()));
         System.out.println("_______________________________________________________________"); // line separator
 
         // Print out farmer's dating profile

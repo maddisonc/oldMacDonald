@@ -60,29 +60,61 @@ public class Farmer
 
     // verse
     // verse method
-    public String verse (String type, String sound)
+    public String verse (String color, String type, String sound)
     {
+        String resetColor = "\u001B[0m"; //black
+        String tempColor = "";
+        String[] colorsArr = {"\u001B[32m", "\u001B[36m", "\u001B[33m"}; // green, cyan, yellow
+        if (color.equals("green"))
+        {
+            tempColor = colorsArr[0];
+        }
+        else if (color.equals("cyan"))
+        {
+            tempColor = colorsArr[1];
+        }
+        else
+        {
+            tempColor = colorsArr[2];
+        }
+
         String verse = "Old MacDonald had a farm, Ee i ee i oh!"
-                + "\nAnd on that farm he had a " + type + ","
+                + "\nAnd on that farm he had a " + tempColor + type + resetColor + ","
                 + "\nEe i ee i oh!"
-                + "\nWith a " + sound + "-" + sound + " here,"
-                + "\nAnd a " + sound + "-" + sound + " there,"
-                + "\nHere a " + sound + ", there a " + sound + ","
-                + "\nEverywhere a " + sound + "-" + sound + ","
+                + "\nWith a " + tempColor + sound + resetColor +  "-" + tempColor + sound + resetColor + " here,"
+                + "\nAnd a " + tempColor + sound + resetColor + "-" + tempColor + sound + resetColor + " there,"
+                + "\nHere a " + tempColor + sound + resetColor + ", there a " + tempColor + sound + resetColor + ","
+                + "\nEverywhere a " + tempColor + sound + resetColor + "-" + tempColor + sound + resetColor + ","
                 + "\nOld MacDonald had a farm"
                 + "\nEe i ee i oh!\n";
         return verse;
     }
 
-    public String verse (String name, String type, String sound)
+    public String verse (String color, String name, String type, String sound)
     {
+        String resetColor = "\u001B[0m"; //black
+        String tempColor = "";
+        String[] colorsArr = {"\u001B[32m", "\u001B[36m", "\u001B[33m"}; // green, cyan, yellow
+        if (color.equals("green"))
+        {
+            tempColor = colorsArr[0];
+        }
+        else if (color.equals("cyan"))
+        {
+            tempColor = colorsArr[1];
+        }
+        else
+        {
+            tempColor = colorsArr[2];
+        }
+
         String verse = "Old MacDonald had a farm, Ee i ee i oh!"
-                + "\nAnd on that farm he had a " + type + " named " + name + ","
+                + "\nAnd on that farm he had a " + tempColor + type + resetColor + " named " + tempColor + name + resetColor + ","
                 + "\nEe i ee i oh!"
-                + "\nWith a " + sound + "-" + sound + " here,"
-                + "\nAnd a " + sound + "-" + sound + " there,"
-                + "\nHere a " + sound + ", there a " + sound + ","
-                + "\nEverywhere a " + sound + "-" + sound + ","
+                + "\nWith a " + tempColor + sound + resetColor + "-" + tempColor + sound + resetColor + " here,"
+                + "\nAnd a " + tempColor + sound + resetColor + "-" + tempColor + sound + resetColor + " there,"
+                + "\nHere a " + tempColor + sound + resetColor + ", there a " + tempColor + sound + resetColor + ","
+                + "\nEverywhere a " + tempColor + sound + resetColor + "-" + tempColor + sound + resetColor + ","
                 + "\nOld MacDonald had a farm"
                 + "\nEe i ee i oh!\n";
         return verse;
